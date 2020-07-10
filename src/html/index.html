@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="google-signin-client_id" content="647828252515-8av5eei8f4bnn6meur9bq54put1oqr7b.apps.googleusercontent.com">
+
+    <script>
+      history.pushState({}, "entry page", location.hash.substring(1));
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js?onload=triggerGoogleLoaded" async defer></script>
+    <script type="text/javascript">
+      function triggerGoogleLoaded() {
+        window.dispatchEvent(new Event('google-loaded'));
+      }
+    </script>
+
+    <title>Porper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <!-- build:js -->
+    <script src="dist/js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

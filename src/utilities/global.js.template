@@ -1,0 +1,5 @@
+module.exports = {
+  apiUrl: "",
+  callbackUrl: "",
+  githubAuthUrl: "https://github.com/login/oauth/authorize?scope=user&client_id=<client_id>"
+};
